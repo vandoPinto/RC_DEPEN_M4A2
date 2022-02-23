@@ -1,5 +1,5 @@
 <style>
-    .bot {
+    .aba {
         width: 70px;
         background-color: #fac900;
         color: #836bff;
@@ -11,6 +11,18 @@
         height: 70px;
         -webkit-border-radius: 50%;
     }
+
+    .janela {
+        margin-top: -50px;
+        background-color: #836bff;
+        width: 750px;
+        height: 260px;
+        border-radius: 10px;
+    }
+
+    li {
+        color: white;
+    }
 </style>
 <div style="height: 72px; width: 100%; background-color: #836bff; ">
     <div style="background-color: white; width: 17px; height: 66px; margin-left: 19px; display: flex;"><img
@@ -20,94 +32,98 @@
             src="recursos/imgs/SI_H3.png">
     </div>
 </div>
-<div class="coluna-esquerda largura-1_1">
-    <div style="margin-top: 25px;margin-left: 70px;width: 760px;">
-
-        <div
-            style="margin-left: 30px;margin-top: 30px;display: inline-flex;width: 680px;justify-content: space-between;">
-            <div class="bot" id="botao_1">
-                <div style="margin: 5px;" id="texto_1">1</div>
-            </div>
-            <div class="bot" id="botao_2">
-                <div style="margin: 10px;" id="texto_2">2</div>
-            </div>
-            <div class="bot" id="botao_3">
-                <div style="margin: 10px;" id="texto_3">3</div>
-            </div>
-            <div class="bot" id="botao_4">
-                <div style="margin: 10px;" id="texto_4">4</div>
-            </div>
-            <div class="bot" id="botao_5">
-                <div style="margin: 10px;" id="texto_5">5</div>
-            </div>
-            <div class="bot" id="botao_6">
-                <div style="margin: 10px;" id="texto_6">6</div>
-            </div>
-            <div class="bot" id="botao_7">
-                <div style="margin: 10px;" id="texto_7">7</div>
+<div style="margin-top: 30px;margin-left: 60px;">
+    <div style="display: inline-flex; margin-left: 30px;">
+        <div class="aba" id="botao_1">
+            <div style="margin: 5px;" id="texto_1">1</div>
+        </div>
+        <div class="aba" id="botao_2">
+            <div style="margin: 10px;" id="texto_2">2</div>
+        </div>
+        <div class="aba" id="botao_3">
+            <div style="margin: 10px;" id="texto_3">3</div>
+        </div>
+        <div class="aba" id="botao_4">
+            <div style="margin: 10px;" id="texto_4">4</div>
+        </div>
+    </div>
+    <div class="janela">
+        <div id="janela_0">
+            <h1 style="color: #fac900;padding-top: 60px;padding-left: 70px;">Dermatite atópica / Dermatite de contato
+            </h1>
+            <p style="margin-left: 70px;color:white;margin-top: 0px;justify-content: center;align-items: center;">
+                Vejamos resumidamente os principais aspectos relacionados a essas inflamações. </p>
+            <p style="color: white; margin-left: 70px;">Clique em cada uma das abas para
+                conhecê-los.</p>
+        </div>
+        <div id="janela_1">
+            <div style="display: flex;">
+                <div style="margin-top: 50px; margin-left: 30px; width: 290px;">
+                    <h1 style="color: #fac900;">Dermatite atópica</h1>
+                    <ul>
+                        <li>Doença alérgica, genética e crônica, na qual se observa inflamação da pele com períodos
+                            alternados de melhora e piora;</li>
+                        <li>Em adultos, lesões comuns nas dobras dos braços e joelhos;</li>
+                        <li>Pode vir acompanhada de outras manifestações alérgicas, como a asma, a rinite ou ambas.</li>
+                    </ul>
+                </div>
+                <img style="margin-top: 34px;width: 285px;margin-left: 120px;" src="recursos/imgs/SI_29janela2.png">
             </div>
         </div>
-        <div>
-            <div id="janela_1"
-                style="width: 140px; background-color: rgb(131, 107, 255); height: 101px; padding-top: 5px; border-radius: 10px; padding-left: 10px; padding-right: 10px; margin-left: -50px; margin-top: -10px; display: none;">
-                <h1>Dermatite atópica / Dermatite de contato</h1>
-                <p style="color: white;">Vejamos resumidamente os principais aspectos relacionados a essas inflamações.
-                </p>
-                <p>Clique em cada uma das abas para
-                    conhecê-los.</p>
+        <div id="janela_2">
+            <div style="display: flex;">
+                <div style="margin-top: 44px;display: flex;">
+                    <img style="width: 217px;margin-left: 50px;margin-top: 0px;" src="recursos/imgs/SI_29janela3.png">
+                    <div style="margin-top: 21px;margin-left: 80px;">
+                        <h1 style="color: #fac900;">Dermatite atópica</h1>
+                        <ul>
+                            <li>Fatores que desencadeiam as crises: pólen, mofo, ácaro, lã, perfumes, material de
+                                limpeza,
+                                frio,
+                                etc.;</li>
+                            <li>Manifestações observadas: coceira intensa por causa da pele ressecada o que termina
+                                acarretando
+                                em lesões avermelhadas e
+                                espessas, com áreas esfoladas e avermelhadas.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div id="janela_2"
-                style="width: 140px; background-color: rgb(131, 107, 255); height: 165px; padding-top: 5px; border-radius: 10px; padding-left: 10px; padding-right: 10px; margin-left: 110px; margin-top: -10px; display: none;">
-                <h1>Dermatite atópica</h1>
-                <ul>
-                    <li>Doença alérgica, genética e crônica, na qual se observa inflamação da pele com períodos
-                        alternados de melhora e piora;</li>
-                    <li>Em adultos, lesões comuns nas dobras dos braços e joelhos;</li>
-                    <li>Pode vir acompanhada de outras manifestações alérgicas, como a asma, a rinite ou ambas.</li>
-                </ul>
-                <img style="margin-top: 10px;width: 360px;margin-right: 50px;" src="recursos/imgs/SI_29a.png">
+        </div>
+        <div id="janela_3">
+            <div style="display: flex;">
+                <div style="margin-top: 50px; margin-left: 40px; width: 350px;">
+                    <h1 style="color: #fac900;">Dermatite de contato</h1>
+                    <ul style="margin-left: 15px;">
+                        <li>Trata-se de uma reação inflamatória decorrente do contato com um agente químico;</li>
+                        <li>Dois tipos identificados: irritativa (80% dos casos) e alérgica. A primeira é normalmente
+                            desencadeada por substâncias
+                            ácidas ou alcalinas, como é o caso do cimento e alguns produtos de limpeza. A segunda é
+                            desencadeada pela exposição
+                            contínua a químicos, como metais de bijuterias e aqueles presentes em produtos de higiene
+                            pessoal, tais como sabonetes,
+                            xampus, desodorantes, cremes, produtos químicos capilares, etc.</li>
+                    </ul>
+                </div>
+                <img style="margin-top: 0px;margin-left: 120px;width: 242px;" src="recursos/imgs/SI_29janela4.png">
             </div>
-            <div id="janela_3"
-                style="width: 140px; background-color: rgb(131, 107, 255); height: 120px; padding-top: 5px; border-radius: 10px; padding-left: 10px; padding-right: 10px; margin-left: 220px; margin-top: -10px; display: none;">
-                <img style="margin-top: 10px;width: 360px;margin-right: 50px;" src="recursos/imgs/SI_29b.png">
-                <h1>Dermatite atópica</h1>
-                <ul>
-                    <li>Fatores que desencadeiam as crises: pólen, mofo, ácaro, lã, perfumes, material de limpeza, frio,
-                        etc.;</li>
-                    <li>Manifestações observadas: coceira intensa por causa da pele ressecada o que termina acarretando
-                        em lesões avermelhadas e
-                        espessas, com áreas esfoladas e avermelhadas.</li>
-                </ul>
+        </div>
+        <div id="janela_4">
+            <div style="display: flex;">
+                <img style="width: 311px;margin-top: 46px;margin-left: 30px;" src="recursos/imgs/SI_29janela5.png">
+                <div style="margin-top: 50px; margin-left: 30px; width: 340px;">
+                    <h1 style="color: #fac900;">Dermatite de contato</h1>
+                    <ul>
+                        <li>Os sintomas não são imediatos, podendo ocorrer depois de algumas horas ou até alguns dias
+                            após a
+                            exposição ao agente.
+                            Incluem ardor e coceira. A pele da pessoa fica avermelhada, havendo, às vezes formações de
+                            vesículas (bolinhas com água
+                            onde ocorreu o contato com o objeto causador da alergia);</li>
+                        <li>Raramente ocorrem reações em vários locais do corpo.</li>
+                    </ul>
+                </div>
             </div>
-            <div id="janela_4"
-                style="width: 120px; background-color: rgb(131, 107, 255); height: 71px; padding-top: 5px; border-radius: 10px; padding-left: 10px; padding-right: 10px; margin-left: 310px; margin-top: -10px; display: none;">
-                <h1>Dermatite de contato</h1>
-                <ul>
-                    <li>Trata-se de uma reação inflamatória decorrente do contato com um agente químico;</li>
-                    <li>Dois tipos identificados: irritativa (80% dos casos) e alérgica. A primeira é normalmente
-                        desencadeada por substâncias
-                        ácidas ou alcalinas, como é o caso do cimento e alguns produtos de limpeza. A segunda é
-                        desencadeada pela exposição
-                        contínua a químicos, como metais de bijuterias e aqueles presentes em produtos de higiene
-                        pessoal, tais como sabonetes,
-                        xampus, desodorantes, cremes, produtos químicos capilares, etc.</li>
-                </ul>
-                <img style="margin-top: 10px;width: 360px;margin-right: 50px;" src="recursos/imgs/SI_29c.png">
-            </div>
-            <div id="janela_5"
-                style="width: 120px; background-color: rgb(131, 107, 255); height: 109px; padding-top: 5px; border-radius: 10px; padding-left: 10px; padding-right: 10px; margin-left: 410px; margin-top: -10px; display: none;">
-                <img style="margin-top: 10px;width: 360px;margin-right: 50px;" src="recursos/imgs/SI_29d.png">
-                <h1>Dermatite de contato</h1>
-                <ul>
-                    <li>Os sintomas não são imediatos, podendo ocorrer depois de algumas horas ou até alguns dias após a
-                        exposição ao agente.
-                        Incluem ardor e coceira. A pele da pessoa fica avermelhada, havendo, às vezes formações de
-                        vesículas (bolinhas com água
-                        onde ocorreu o contato com o objeto causador da alergia);</li>
-                    <li>Raramente ocorrem reações em vários locais do corpo.</li>
-                </ul>
-            </div>
-
         </div>
     </div>
 </div>
@@ -120,11 +136,12 @@
         let janelas = $(document).find('[id^=janela]');
         console.log(janelas);
         apagarJanelas();
+        $(document).find('[id^=janela_0]').show();
         let botoes = $(document).find('[id^=botao]').map((index, botao) => {
             $(botao).click(() => {
                 apagarJanelas();
                 //mudarBotao(index + 1)
-                $(janelas[index]).show();
+                $(janelas[index + 1]).show();
             })
         })
 
