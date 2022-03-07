@@ -30,6 +30,7 @@
 <div id="janela_1"
     style="cursor: pointer; width: 680px;background-color: rgb(131, 107, 255);height: 101px;padding-top: 5px;border-radius: 10px;padding-left: 10px;padding-right: 10px;top: 76px;left: 100px;position: absolute;height: 357px;">
     <img style="width: 660px;" src="recursos/imgs/SI_09a.png">
+    <img src="recursos/imgs/close.png" style="position: absolute;top: -6px;left: 680px;width: 40px;">
 </div>
 <footer style="height: 39.05px; width: 100%; background-color: #836bff;">
     <img style="height: 29px;margin: 6.5px 37.05px;" src="recursos/imgs/SI_F1.png">
@@ -37,26 +38,14 @@
 </footer>
 <script>
     $(() => {
-        let janelas = $(document).find('[id^=janela]');
+        let janelas = $(document).find('[id^=janela]').css('cursor', 'pointer').on("click", apagarJanelas);
         apagarJanelas();
         let botoes = $(document).find('[id^=botao]').map((index, botao) => {
             $(botao).click(() => {
                 apagarJanelas();
-                //mudarBotao(index + 1)
-                $(janelas[index]).show();
+                $(janelas[index]).fadeIn();
             })
         })
-
-        function mudarBotao(numero) {
-            console.log($(document).find(`[id^=botao_${numero}]`));
-            $(document).find('[id^=botao]').map((index, botao) => {
-                $(document).find(`[id^=botao_${index + 1}]`).css("background-color", "#004c72");
-                $(document).find(`[id^=texto_${index + 1}]`).css("color", "#fac900");
-            })
-            $(document).find(`[id^=botao_${numero}]`).css("background-color", "#fac900");
-            $(document).find(`[id^=texto_${numero}]`).css("color", "#004c72");
-        }
-
         function apagarJanelas() {
             janelas.map((index, janela) => {
                 $(janela).hide();
