@@ -135,7 +135,7 @@
             console.log("clicou " + resposta.split("_")[1]);
             if (resposta.split("_")[1] == "c") {
                 $(feedCerto).fadeIn();
-                pontos += 1;
+                pontos[0] = 1;
                 mostrarSub = false;
                 submeter.hide();
             } else {
