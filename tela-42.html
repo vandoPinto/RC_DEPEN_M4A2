@@ -143,11 +143,12 @@
             console.log("clicou " + resposta.split("_")[1]);
             if (resposta.split("_")[1] == "c") {
                 $(feedCerto).fadeIn();
-                pontos[0] = 1;
+                pontos[2] = 1;
                 mostrarSub = false;
                 submeter.hide();
             } else {
                 $(feedErrado).fadeIn();
+                pontos[2] = 0;
             }
         })
     })
